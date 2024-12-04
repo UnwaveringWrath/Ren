@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Checkout</title>
+    <link rel="stylesheet" href="cart-checkout.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="flowers.html">Flowers</a></li>
+            <li><a href="Arrangements.html">Set Arrangements</a></li>
+            <li><a href="cart-checkout.html">Cart Checkout</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <h1 style="color: rgb(255, 255, 255);">&#9830;  &#160;  &#160;   Ren &#160; &#160;      &#9830;</h1>
+    <h2 class="subheading"><i> Home &#160;  of &#160;  Fleurs </i></h2>
+    <div class="welcome"></div>
+    
+    <br> <br><br>
+    <h1>Cart Checkout</h1>
+    <section id="cart"></section>
+
+    <div class="CCD">
+        <h2>Credit Card Information</h2>
+        <form id="credit-card-form-inputs" class="form-grid">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" class="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="Name">Name:</label>
+                <input type="text" class="first-name" name="first-name">
+            </div>
+            <div class="form-group">
+                <label for="credit-card-type">Credit Card Type:</label>
+                <select class="credit-card-type" name="credit-card-type">
+                    <option value="visa">Visa</option>
+                    <option value="mc">Master Card</option>
+                    <option value="ae">American Express</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="credit-card-number">Credit Card Number:</label>
+                <input type="text" class="credit-card-number" name="credit-card-number">
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV:</label>
+                <input type="text" class="cvv" name="cvv">
+            </div>
+            <div class="form-group">
+                <label for="address">Billing Address:</label>
+                <textarea class="address" name="address"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit-credit-card-form">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="box">
+        <h2>Order Summary</h2>
+        <table id="order-summary">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="order-summary-body">
+                <!-- Order summary will be displayed here -->
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <p>Copyrights &#169 2024 - All rights reserved </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

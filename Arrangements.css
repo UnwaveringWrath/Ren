@@ -1,0 +1,103 @@
+.arrangements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+  }
+  h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    background-image: url(b5.jpg);
+    background-size: cover;
+    border-image: 5px black;
+    text-shadow: 7px 7px 7px rgb(0, 0, 0);
+    font-size: 50px;
+    margin-bottom: 0;
+  }
+  
+  .subheading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: rgb(26, 196, 196);
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  nav a:hover {
+    color: #ccc;
+  }
+  
+  nav a.active {
+    color: #fff;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .arrangement {
+    margin: 20px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: aliceblue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    float: left;
+  }
+  
+  .arrangement img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .arrangement h2 {
+    margin-top: 0;
+  }
+  
+  .arrangement p {
+    margin-bottom: 10px;
+  }
+  
+  .arrangement button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .arrangement button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .arrangement:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+  }
